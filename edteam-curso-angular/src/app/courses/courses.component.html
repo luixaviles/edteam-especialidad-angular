@@ -1,0 +1,91 @@
+<div class="card">
+  <div class="card-header">
+    {{titulo}}
+  </div>
+  <div class="card-body">
+    <div>
+      <table class="table">
+        <thead>
+          <th>Logo</th>
+          <th>Nombre</th>
+          <th>Descripcion</th>
+          <th>Fecha de Inicio</th>
+          <th>Precio</th>
+          <th>Rating</th>
+          <th>Acciones</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img [src]="cursos[0].imageUrl"
+                   [style.width]="anchoImagen"
+                   [title]="'TypeScript'">
+            </td>
+            <td>{{cursos[0].name}}</td>
+            <td>{{cursos[0].description}}</td>
+            <td>{{cursos[0].startDate | date: 'fullDate'}}</td>
+            <td>{{cursos[0].price | currency : 'Bs' }}</td>
+            <td>{{cursos[0].rating}}</td>
+            <td>
+              <span style="float:left;"
+                    (click)="editarCurso(cursos[0])"
+                    (mouseover)="onMouseover($event)"
+                    (dblclick)="onDobleclick($event)"
+                    >
+                <i class="fa fa-edit"></i>
+              </span>
+              <span style="float:right;" (click)="eliminarCurso(cursos[0])">
+                <i class="fa fa-trash"></i>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <img [src]="cursos[1].imageUrl"
+                [style.width]="anchoImagen"
+                [title]="'TypeScript'">
+            </td>
+            <td>{{cursos[1].name}}</td>
+            <td>{{cursos[1].description}}</td>
+            <td>{{cursos[1].startDate | date: 'fullDate' | uppercase}}</td>
+            <td>{{cursos[1].price | currency : 'Bs' }}</td>
+            <td>{{cursos[1].rating}}</td>
+            <td>
+                <span style="float:left;" (click)="editarCurso(cursos[1])">
+                    <i class="fa fa-edit"></i>
+                  </span>
+                  <span style="float:right;" (click)="eliminarCurso(cursos[1])">
+                    <i class="fa fa-trash"></i>
+                  </span>
+
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <img [src]="cursos[2].imageUrl"
+                [style.width]="anchoImagen"
+                [title]="'TypeScript'">
+            </td>
+            <td>{{cursos[2].name}}</td>
+            <td>{{cursos[2].description}}</td>
+            <td>{{cursos[2].startDate | date: 'fullDate' | lowercase }}</td>
+            <td>{{cursos[2].price | currency : 'Bs' }}</td>
+            <td>{{cursos[2].rating}}</td>
+            <td>
+                <span style="float:left;" (click)="editarCurso(cursos[2])">
+                    <i class="fa fa-edit"></i>
+                  </span>
+                  <span style="float:right;" (click)="eliminarCurso(cursos[2])">
+                    <i class="fa fa-trash"></i>
+                  </span>
+
+            </td>
+          </tr>
+
+
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
