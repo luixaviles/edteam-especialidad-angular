@@ -1,8 +1,21 @@
+<div>
+  <ul>
+    <li *ngFor="let curso of cursos">{{curso.name}}</li>
+  </ul>
+</div>
+
 <div class="card">
   <div class="card-header">
     {{titulo}}
   </div>
-  <div class="card-body">
+  <div *ngIf="cursos && cursos.length > 0" class="card-body">
+    <div class="row filtro">
+      <div class="col-md-2">Filtrar Por:</div>
+      <div class="col-md-6">
+        <input #filtro type="text" [(ngModel)]="textoFiltro">
+        <span>{{textoFiltro}}</span>
+      </div>
+    </div>
     <div>
       <table class="table">
         <thead>
@@ -15,77 +28,29 @@
           <th>Acciones</th>
         </thead>
         <tbody>
-          <tr>
-            <td>
-              <img [src]="cursos[0].imageUrl"
-                   [style.width]="anchoImagen"
-                   [title]="'TypeScript'">
-            </td>
-            <td>{{cursos[0].name}}</td>
-            <td>{{cursos[0].description}}</td>
-            <td>{{cursos[0].startDate | date: 'fullDate'}}</td>
-            <td>{{cursos[0].price | currency : 'Bs' }}</td>
-            <td>{{cursos[0].rating}}</td>
-            <td>
-              <span style="float:left;"
-                    (click)="editarCurso(cursos[0])"
-                    (mouseover)="onMouseover($event)"
-                    (dblclick)="onDobleclick($event)"
-                    >
-                <i class="fa fa-edit"></i>
-              </span>
-              <span style="float:right;" (click)="eliminarCurso(cursos[0])">
-                <i class="fa fa-trash"></i>
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-                <img [src]="cursos[1].imageUrl"
-                [style.width]="anchoImagen"
-                [title]="'TypeScript'">
-            </td>
-            <td>{{cursos[1].name}}</td>
-            <td>{{cursos[1].description}}</td>
-            <td>{{cursos[1].startDate | date: 'fullDate' | uppercase}}</td>
-            <td>{{cursos[1].price | currency : 'Bs' }}</td>
-            <td>{{cursos[1].rating}}</td>
-            <td>
-                <span style="float:left;" (click)="editarCurso(cursos[1])">
-                    <i class="fa fa-edit"></i>
-                  </span>
-                  <span style="float:right;" (click)="eliminarCurso(cursos[1])">
-                    <i class="fa fa-trash"></i>
-                  </span>
-
-            </td>
-          </tr>
-          <tr>
-            <td>
-                <img [src]="cursos[2].imageUrl"
-                [style.width]="anchoImagen"
-                [title]="'TypeScript'">
-            </td>
-            <td>{{cursos[2].name}}</td>
-            <td>{{cursos[2].description}}</td>
-            <td>{{cursos[2].startDate | date: 'fullDate' | lowercase }}</td>
-            <td>{{cursos[2].price | currency : 'Bs' }}</td>
-            <td>{{cursos[2].rating}}</td>
-            <td>
-                <span style="float:left;" (click)="editarCurso(cursos[2])">
-                    <i class="fa fa-edit"></i>
-                  </span>
-                  <span style="float:right;" (click)="eliminarCurso(cursos[2])">
-                    <i class="fa fa-trash"></i>
-                  </span>
-
-            </td>
-          </tr>
-
-
+            <tr *ngFor="let curso of cursos">
+                <td>
+                  <img [src]="curso.imageUrl"
+                       [style.width]="anchoImagen"
+                       [title]="curso.name">
+                </td>
+                <td>{{curso.name}}</td>
+                <td>{{curso.description}}</td>
+                <td>{{curso.startDate | date: 'fullDate'}}</td>
+                <td>{{curso.price | currency : 'Bs' }}</td>
+                <td>{{curso.rating}}</td>
+                <td>
+                  <ed-course-action [curso]="curso"
+                                    (edit)="onEditCurso($event)"
+                                    (delete)="onDeleteCurso($event)">
+                  </ed-course-action>
+                </td>
+            </tr>
         </tbody>
-
       </table>
     </div>
+  </div>
+  <div *ngIf="!cursos || cursos.length === 0" class="alert alert-info" role="alert">
+    No existen cursos disponibles. Intente más tarde.
   </div>
 </div>

@@ -4,6 +4,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { CoursesComponent } from './courses/courses.component';
+import { CourseEditComponent } from './course-edit/course-edit.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'courses',
     component: CoursesComponent
+  },
+  {
+    path: 'course/:id',
+    component: CourseEditComponent
   }
 ];
 
