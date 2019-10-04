@@ -1,6 +1,7 @@
 import { Component, OnInit, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 import { Curso } from '../curso';
 import { Router } from '@angular/router';
+import { CoursesService } from '../courses.service';
 
 @Component({
   selector: 'ed-courses',
@@ -13,49 +14,41 @@ export class CoursesComponent implements OnInit, AfterViewInit {
   anchoImagen: string = '40px';
   @ViewChild('filtro', {static: false})
   filtro: ElementRef;
-  textoFiltro: string = '';
 
-  cursos: any[] = [
-    {
-      id: 1,
-      name: 'TypeScript Desde Cero',
-      startDate: 'August 10, 2019',
-      description:
-        'Lleva JavaScript al siguiente nivel con tipado estático y programación orientada a objetos',
-      price: 25.99,
-      rating: 4.5,
-      imageUrl: 'assets/images/typescript.png'
-    },
-    {
-      id: 2,
-      name: 'Angular Desde Cero',
-      startDate: 'September 4, 2019',
-      description: 'Aprende el framework frontend con más demanda del mercado',
-      price: 29.99,
-      rating: 5,
-      imageUrl: 'assets/images/angular.png'
-    },
-    {
-      id: 3,
-      name: 'Formularios y APIs con Angular',
-      startDate: 'October 20, 2019',
-      description:
-        'Aprende a consumir datos de APIs Rest y a gestionar formularios con Angular',
-      price: 23.5,
-      rating: 3.9,
-      imageUrl: 'assets/images/angular.png'
-    }
-  ];
+  private _textoFiltro: string;
 
-  constructor(private router: Router) {
+  set textoFiltro(t: string) {
+    console.log('textoFiltro', t);
+    this._textoFiltro = t;
+    // filtrar los cursos
+    this.cursos = t? this.filtrarCursos(t): this.coursesService.getCursos();
+  }
+
+  get textoFiltro() {
+    return this._textoFiltro;
+  }
+
+  cursos: Curso[];
+
+  constructor(private router: Router,
+              private coursesService: CoursesService) {
     // this.eliminarCursos();
   }
 
   ngOnInit() {
+    this.cursos = this.coursesService.getCursos();
+    setTimeout(() => {
+      this.textoFiltro = 'Desde Cero';
+    }, 2000);
   }
 
   ngAfterViewInit() {
     this.filtro.nativeElement.value = 'Angular';
+  }
+
+  filtrarCursos(texto: string) {
+    return this.cursos.filter(
+      (curso: Curso) => curso.name.toLowerCase().indexOf(texto.toLowerCase()) >= 0);
   }
 
   eliminarCursos() {

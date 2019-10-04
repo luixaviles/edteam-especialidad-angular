@@ -8,6 +8,11 @@ import { CourseEditComponent } from './course-edit/course-edit.component';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'courses',
+    pathMatch: 'full'
+  },
+  {
     path: 'dashboard', // localhost:4200/dashboard
     component: DashboardComponent
   },
