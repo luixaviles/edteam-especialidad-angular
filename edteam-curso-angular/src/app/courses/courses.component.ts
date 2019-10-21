@@ -2,6 +2,8 @@ import { Component, OnInit, ElementRef, ViewChild, AfterViewInit } from '@angula
 import { Curso } from '../curso';
 import { Router } from '@angular/router';
 import { CoursesService } from '../courses.service';
+import { catchError, tap } from 'rxjs/operators';
+import { of, EMPTY } from 'rxjs';
 
 @Component({
   selector: 'ed-courses',
@@ -21,7 +23,8 @@ export class CoursesComponent implements OnInit, AfterViewInit {
     console.log('textoFiltro', t);
     this._textoFiltro = t;
     // filtrar los cursos
-    this.cursos = t? this.filtrarCursos(t): this.coursesService.getCursos();
+    this.filtrarCursos(t);
+    // this.cursos = t? this.filtrarCursos(t): this.coursesService.getCursos();
   }
 
   get textoFiltro() {
@@ -29,6 +32,8 @@ export class CoursesComponent implements OnInit, AfterViewInit {
   }
 
   cursos: Curso[];
+  cursosFiltrados: Curso[];
+  mensajeError: string;
 
   constructor(private router: Router,
               private coursesService: CoursesService) {
@@ -36,18 +41,31 @@ export class CoursesComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
-    this.cursos = this.coursesService.getCursos();
-    setTimeout(() => {
-      this.textoFiltro = 'Desde Cero';
-    }, 2000);
+    this.getCursos();
+  }
+
+  getCursos() {
+    this.coursesService.getCursos()
+    .pipe(
+      tap(cursos => console.log('Cursos', cursos)),
+      catchError(error => {
+        this.mensajeError = error;
+        // catch and replace
+        return EMPTY;
+      })
+    )
+    .subscribe((cursos: Curso[])=> {
+      this.cursos = cursos;
+      this.cursosFiltrados = cursos;
+    });
   }
 
   ngAfterViewInit() {
-    this.filtro.nativeElement.value = 'Angular';
+    // this.filtro.nativeElement.value = 'Angular';
   }
 
   filtrarCursos(texto: string) {
-    return this.cursos.filter(
+    this.cursosFiltrados = this.cursos.filter(
       (curso: Curso) => curso.name.toLowerCase().indexOf(texto.toLowerCase()) >= 0);
   }
 

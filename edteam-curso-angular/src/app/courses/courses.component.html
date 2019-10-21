@@ -28,7 +28,7 @@
           <th>Acciones</th>
         </thead>
         <tbody>
-            <tr *ngFor="let curso of cursos">
+            <tr *ngFor="let curso of cursosFiltrados">
                 <td>
                   <img [src]="curso.imageUrl"
                        [style.width]="anchoImagen"
@@ -50,7 +50,7 @@
       </table>
     </div>
   </div>
-  <div *ngIf="!cursos || cursos.length === 0" class="alert alert-info" role="alert">
-    No existen cursos disponibles. Intente más tarde.
+  <div *ngIf="mensajeError" class="alert alert-danger" role="alert">
+    {{mensajeError}}
   </div>
 </div>
