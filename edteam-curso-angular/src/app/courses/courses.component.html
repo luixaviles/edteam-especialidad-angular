@@ -11,9 +11,14 @@
   <div *ngIf="cursos && cursos.length > 0" class="card-body">
     <div class="row filtro">
       <div class="col-md-2">Filtrar Por:</div>
-      <div class="col-md-6">
+      <div class="col-md-8">
         <input #filtro type="text" [(ngModel)]="textoFiltro">
         <span>{{textoFiltro}}</span>
+      </div>
+      <div class="col-md-2">
+        <button type="button"
+                [routerLink]="['/course/add']"
+                class="btn btn-primary">Nuevo Curso</button>
       </div>
     </div>
     <div>
