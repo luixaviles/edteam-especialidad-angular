@@ -6,6 +6,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { CoursesComponent } from './courses/courses.component';
 import { CourseEditComponent } from './course-edit/course-edit.component';
 import { CourseAddComponent } from './course-add/course-add.component';
+import { CourseAddReactiveComponent } from './course-add-reactive/course-add-reactive.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'course/add',
     component: CourseAddComponent
+  },
+  {
+    path: 'course/add-reactive',
+    component: CourseAddReactiveComponent
   }
 ];
 

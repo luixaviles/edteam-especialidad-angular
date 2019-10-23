@@ -1,0 +1,87 @@
+<div class="card">
+  <div class="card-header">
+    Nuevo Curso(Formulario Reactivo)
+  </div>
+  <div class="card-body">
+    <form [formGroup]="courseAddForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          name="name"
+          placeholder="Ingrese Nombre"
+          [formControlName]="'name'"
+        />
+        <div *ngIf="courseAddForm.get('name').invalid && (courseAddForm.get('name').dirty || courseAddForm.get('name').touched)" class="alert alert-danger">
+          El nombre es requerido
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="description">Descripcion</label>
+        <input
+          type="text"
+          class="form-control"
+          id="description"
+          name="description"
+          placeholder="Descripcion"
+          formControlName="description"
+        />
+        <div *ngIf="courseAddForm.get('description').invalid && (courseAddForm.get('description').dirty || courseAddForm.get('description').touched)">
+          <div class="alert alert-danger" *ngIf="courseAddForm.get('description').getError('required')">
+            La descripcion es requerida
+          </div>
+          <div class="alert alert-danger" *ngIf="courseAddForm.get('description').getError('minlength')">
+            La descripcion debe tener al menos 4 caracteres
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="price">Precio</label>
+        <input
+          type="number"
+          class="form-control"
+          id="price"
+          name="price"
+          placeholder="Precio"
+          formControlName="price"
+        />
+        <div *ngIf="price.invalid && (price.dirty || price.touched)">
+            <div *ngIf="price.errors['required']"  class="alert alert-danger">
+                Precio es requerido
+            </div>
+            <div *ngIf="price.errors['minPrice']"  class="alert alert-danger">
+                El precio debe ser mayor a 10
+            </div>
+        </div>
+
+      </div>
+      <div class="form-group">
+        <label for="url">URL de imagen</label>
+        <input
+          type="text"
+          class="form-control"
+          id="url"
+          name="url"
+          placeholder="URL de Imagen"
+          formControlName="url"
+        />
+      </div>
+      <div class="form-group form-check">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="active"
+          name="active"
+        />
+        <label class="form-check-label" for="active">Curso Activo</label>
+      </div>
+      <button type="submit"
+              class="btn btn-primary"
+              [disabled]="courseAddForm.invalid || courseAddForm.untouched">
+              Crear Curso
+      </button>
+    </form>
+  </div>
+</div>
