@@ -1,0 +1,17 @@
+<mat-sidenav-container fullscreen>
+  <mat-sidenav #sidenav>
+    <mat-nav-list>
+      <a mat-list-item>
+        <mat-icon mat-list-icon>supervisor_account</mat-icon>
+        <span mat-line>Accounts</span>
+      </a>
+      <a mat-list-item>
+        <mat-icon mat-list-icon>settings_application</mat-icon>
+        <span mat-line>Settings</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <ed-toolbar [sidenav]="sidenav"></ed-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>

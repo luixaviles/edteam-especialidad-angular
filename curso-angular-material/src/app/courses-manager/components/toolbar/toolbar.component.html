@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <button mat-button (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Courses Manager</span>
+
+  <span class="toolbar-space"></span>
+
+  <button mat-button [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu>
+    <button mat-menu-item>Add Course</button>
+  </mat-menu>
+
+</mat-toolbar>
