@@ -1,0 +1,26 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.categories {
+  display: flex;
+  height: 40px;
+}
+
+.category {
+  margin-right: 10px;
+}
+
+mat-radio-button {
+  margin-right: 10px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  margin-top: 15px;
+}

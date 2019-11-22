@@ -1,0 +1,52 @@
+<mat-card>
+  <mat-card-title>
+    Curso Nuevo
+  </mat-card-title>
+  <div class="form-container">
+    <mat-form-field>
+      <input matInput placeholder="Nombre" [(ngModel)]="course.name">
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput placeholder="Description" [(ngModel)]="course.description"></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="Especialidad" [(ngModel)]="course.specialty">
+        <mat-option value="angular">Angular</mat-option>
+        <mat-option value="javascript">JavaScript</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [matDatepicker]="fechaInicio" [(ngModel)]="course.startDate" placeholder="Fecha de Inicio">
+      <mat-datepicker-toggle matSuffix [for]="fechaInicio"></mat-datepicker-toggle>
+      <mat-datepicker #fechaInicio></mat-datepicker>
+    </mat-form-field>
+
+    <section class="categories">
+        <mat-checkbox *ngFor="let category of categories"
+                      class="category"
+                      [(ngModel)]="category.checked">
+          {{category.name}}
+        </mat-checkbox>
+    </section>
+
+    <mat-radio-group [(ngModel)]="course.isActive">
+      <mat-radio-button [value]="true">Activo</mat-radio-button>
+      <mat-radio-button [value]="false">Inactivo</mat-radio-button>
+    </mat-radio-group>
+
+    <section class="slider">
+      <span>Nivel del Curso</span>
+      <mat-slider [min]="0" [max]="10" [step]="1" [thumbLabel]="true" [tickInterval]="1">
+      </mat-slider>
+    </section>
+  </div>
+  <mat-card-actions>
+    <button mat-raised-button
+            color="primary"
+            (click)="save()">
+      Save
+    </button>
+    <button mat-raised-button>Cancel</button>
+  </mat-card-actions>
+</mat-card>
+

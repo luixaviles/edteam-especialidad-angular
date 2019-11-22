@@ -6,7 +6,14 @@ import {
   MatIconModule,
   MatSidenavModule,
   MatListModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatInputModule,
+  MatSelectModule,
+  MatDatepickerModule,
+  MatNativeDateModule,
+  MatCheckboxModule,
+  MatRadioModule,
+  MatSliderModule
 } from '@angular/material';
 
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -34,7 +41,14 @@ import { MatTreeModule } from '@angular/material/tree';
     MatSortModule,
     MatTreeModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatInputModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatCheckboxModule,
+    MatRadioModule,
+    MatSliderModule,
   ],
   exports: [
     MatButtonModule,
@@ -49,7 +63,14 @@ import { MatTreeModule } from '@angular/material/tree';
     MatTreeModule,
     MatSidenavModule,
     MatListModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatInputModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatCheckboxModule,
+    MatRadioModule,
+    MatSliderModule
   ]
 })
 export class MaterialModule { }
