@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CoursesManagerComponent } from './courses-manager.component';
 import { CourseAddComponent } from './components/course-add/course-add.component';
+import { CourseListComponent } from './components/course-list/course-list.component';
 
 
 const routes: Routes = [
@@ -10,8 +11,15 @@ const routes: Routes = [
     component: CoursesManagerComponent,
     children: [
       {
+        path: '',
+        redirectTo: 'list'
+      }, {
         path: 'add', // /manager/add
         component: CourseAddComponent
+      }, {
+        path: 'list',
+        component: CourseListComponent
+
       }
     ]
   }

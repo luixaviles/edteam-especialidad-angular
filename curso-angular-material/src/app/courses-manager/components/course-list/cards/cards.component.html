@@ -1,0 +1,11 @@
+<div class="container">
+  <mat-card *ngFor="let c of courses">
+    <mat-card-title>{{c.name}}</mat-card-title>
+    <mat-card-subtitle>{{c.startDate}}</mat-card-subtitle>
+    <mat-card-content>{{c.description}}</mat-card-content>
+    <mat-card-actions>
+      <button mat-button>Like</button>
+      <button mat-button>Subscribe</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

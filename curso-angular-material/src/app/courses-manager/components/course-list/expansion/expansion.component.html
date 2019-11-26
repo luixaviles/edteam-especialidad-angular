@@ -1,0 +1,27 @@
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+          Panel 1
+        </mat-panel-title>
+        <mat-panel-description>
+          Contenido - Panel 1
+        </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-form-field>
+      <input matInput placeholder="Ingrese Texto">
+    </mat-form-field>
+  </mat-expansion-panel>
+  <mat-expansion-panel [expanded]="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+          Panel 2
+        </mat-panel-title>
+        <mat-panel-description>
+          Contenido - Panel 2
+        </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>Texto de prueba</p>
+    <button mat-button>Enviar</button>
+  </mat-expansion-panel>
+</mat-accordion>

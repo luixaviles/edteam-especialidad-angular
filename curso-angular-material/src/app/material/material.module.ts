@@ -13,7 +13,9 @@ import {
   MatNativeDateModule,
   MatCheckboxModule,
   MatRadioModule,
-  MatSliderModule
+  MatSliderModule,
+  MatTabsModule,
+  MatExpansionModule
 } from '@angular/material';
 
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -49,6 +51,9 @@ import { MatTreeModule } from '@angular/material/tree';
     MatCheckboxModule,
     MatRadioModule,
     MatSliderModule,
+    MatTabsModule,
+    MatTreeModule,
+    MatExpansionModule,
   ],
   exports: [
     MatButtonModule,
@@ -70,7 +75,10 @@ import { MatTreeModule } from '@angular/material/tree';
     MatNativeDateModule,
     MatCheckboxModule,
     MatRadioModule,
-    MatSliderModule
+    MatSliderModule,
+    MatTabsModule,
+    MatTreeModule,
+    MatExpansionModule
   ]
 })
 export class MaterialModule { }

@@ -8,10 +8,15 @@ import { MaterialModule } from '../material/material.module';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { CourseAddComponent } from './components/course-add/course-add.component';
 import { FormsModule } from '@angular/forms';
+import { CourseListComponent } from './components/course-list/course-list.component';
+import { CardsComponent } from './components/course-list/cards/cards.component';
+import { ListComponent } from './components/course-list/list/list.component';
+import { TreeComponent } from './components/course-list/tree/tree.component';
+import { ExpansionComponent } from './components/course-list/expansion/expansion.component';
 
 
 @NgModule({
-  declarations: [CoursesManagerComponent, SidenavComponent, ToolbarComponent, CourseAddComponent],
+  declarations: [CoursesManagerComponent, SidenavComponent, ToolbarComponent, CourseAddComponent, CourseListComponent, CardsComponent, ListComponent, TreeComponent, ExpansionComponent],
   imports: [
     CommonModule,
     CoursesManagerRoutingModule,
