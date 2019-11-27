@@ -1,0 +1,41 @@
+<mat-card>
+    <mat-card-title>
+      Editar Curso
+    </mat-card-title>
+    <div class="form-container">
+      <mat-form-field>
+        <input matInput placeholder="Nombre" [(ngModel)]="course.name">
+      </mat-form-field>
+
+      <mat-form-field>
+        <textarea matInput placeholder="Descripcion" [(ngModel)]="course.description"></textarea>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-select placeholder="Especialidad" [(ngModel)]="course.specialty">
+          <mat-option value="angular">Angular</mat-option>
+          <mat-option value="javascript">JavaScript</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput [matDatepicker]="fechaInicio" placeholder="Fecha de Inicio" [(ngModel)]="course.startDate">
+        <mat-datepicker-toggle matSuffix [for]="fechaInicio"></mat-datepicker-toggle>
+        <mat-datepicker #fechaInicio></mat-datepicker>
+      </mat-form-field>
+
+      <mat-radio-group aria-label="Select an option" [(ngModel)]="course.isActive">
+        <mat-radio-button [value]="true">Activo</mat-radio-button>
+        <mat-radio-button [value]="false">Inactivo</mat-radio-button>
+      </mat-radio-group>
+    </div>
+
+    <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="update()">
+          Update
+        </button>
+        <button mat-raised-button (click)="cancel()">
+          Cancel
+        </button>
+    </mat-card-actions>
+  </mat-card>

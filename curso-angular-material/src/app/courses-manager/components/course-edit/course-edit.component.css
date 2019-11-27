@@ -1,0 +1,31 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container > * {
+  width: 100%;
+}
+
+span {
+  margin-top: 15px;
+}
+
+mat-radio-button {
+  margin-right: 10px;
+}
+
+
+.categories {
+  display: flex;
+  height: 40px;
+}
+
+.category {
+  margin-right: 10px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+}

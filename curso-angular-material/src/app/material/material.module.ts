@@ -15,7 +15,10 @@ import {
   MatRadioModule,
   MatSliderModule,
   MatTabsModule,
-  MatExpansionModule
+  MatExpansionModule,
+  MatTooltipModule,
+  MatDialogModule,
+  MatSnackBarModule
 } from '@angular/material';
 
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -54,6 +57,9 @@ import { MatTreeModule } from '@angular/material/tree';
     MatTabsModule,
     MatTreeModule,
     MatExpansionModule,
+    MatTooltipModule,
+    MatDialogModule,
+    MatSnackBarModule
   ],
   exports: [
     MatButtonModule,
@@ -78,7 +84,11 @@ import { MatTreeModule } from '@angular/material/tree';
     MatSliderModule,
     MatTabsModule,
     MatTreeModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatTooltipModule,
+    MatDialogModule,
+    MatSnackBarModule
+
   ]
 })
 export class MaterialModule { }

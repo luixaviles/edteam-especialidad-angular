@@ -1,0 +1,36 @@
+<mat-form-field>
+  <input name="filter"
+         matInput
+         placeholder="Filter"
+         (keyup)="applyFilter($event.target.value)"
+         matTooltip="Ingrese texto para filtrado"
+         >
+</mat-form-field>
+<table mat-table [dataSource]="dataSource">
+  <ng-container [matColumnDef]="column" *ngFor="let column of displayedColumns">
+    <ng-container *ngIf="column !== 'edit'">
+        <th mat-header-cell *matHeaderCellDef>{{column}}</th>
+        <td mat-cell *matCellDef="let element">{{element[column]}}</td>
+    </ng-container>
+    <ng-container *ngIf="column === 'edit'">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element">
+          <button mat-button (click)="edit(element)">
+            <mat-icon>edit</mat-icon>
+          </button>
+        </td>
+    </ng-container>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+<mat-paginator [length]="dataSource?.data.length"
+               [pageIndex]="0"
+               [pageSize]="2"
+               [pageSizeOptions]="[2, 4, 6]"
+               showFirstLastButtons
+               ></mat-paginator>
+
+

@@ -13,10 +13,13 @@ import { CardsComponent } from './components/course-list/cards/cards.component';
 import { ListComponent } from './components/course-list/list/list.component';
 import { TreeComponent } from './components/course-list/tree/tree.component';
 import { ExpansionComponent } from './components/course-list/expansion/expansion.component';
+import { TableComponent } from './components/course-list/table/table.component';
+import { CourseEditComponent } from './components/course-edit/course-edit.component';
 
 
 @NgModule({
-  declarations: [CoursesManagerComponent, SidenavComponent, ToolbarComponent, CourseAddComponent, CourseListComponent, CardsComponent, ListComponent, TreeComponent, ExpansionComponent],
+  entryComponents: [CourseEditComponent],
+  declarations: [CoursesManagerComponent, SidenavComponent, ToolbarComponent, CourseAddComponent, CourseListComponent, CardsComponent, ListComponent, TreeComponent, ExpansionComponent, TableComponent, CourseEditComponent],
   imports: [
     CommonModule,
     CoursesManagerRoutingModule,
