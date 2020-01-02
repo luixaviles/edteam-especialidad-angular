@@ -1,0 +1,445 @@
+{
+  "products": [
+    {
+      "salePrice": 13.96,
+      "price": 19.99,
+      "title": "Bell Accent Colorblock Beanie",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000314834",
+      "brand": "Acme",
+      "id": "2000314834",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00314834-02.jpg"
+    },
+    {
+      "salePrice": 3.96,
+      "price": 9.9,
+      "title": "Fair Isle Beanie",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000313354",
+      "brand": "ACC",
+      "id": "2000313354",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00313354-02.jpg"
+    },
+    {
+      "salePrice": 5.16,
+      "price": 12.9,
+      "title": "Gingerbread Trapper Beanie",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000311399",
+      "brand": "ACC",
+      "id": "2000311399",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00311399-02.jpg"
+    },
+    {
+      "salePrice": 3.96,
+      "price": 9.9,
+      "title": "Holiday Print Beanie",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000309450",
+      "brand": "ACC",
+      "id": "2000309450",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00309450-02.jpg"
+    },
+    {
+      "salePrice": 24.99,
+      "price": 24.99,
+      "title": "Studded-Trim Fedora",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000392263",
+      "brand": "ACC",
+      "id": "2000392263",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00392263-02.jpg"
+    },
+    {
+      "salePrice": 12.9,
+      "price": 12.9,
+      "title": "Threaded Open-Knit Beanie",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc_hat/2000301398",
+      "brand": "ACC",
+      "id": "2000301398",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00301398-02.jpg"
+    },
+    {
+      "salePrice": 14.99,
+      "price": 14.99,
+      "title": "Faux Leather & Tweed Cabbie Hat",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000401298",
+      "brand": "ACC",
+      "id": "2000401298",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00401298-02.jpg"
+    },
+    {
+      "salePrice": 12.9,
+      "price": 12.9,
+      "title": "Coca-Cola Graphic Dad Cap",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000276396",
+      "brand": "ACC",
+      "id": "2000276396",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00276396-01.jpg"
+    },
+    {
+      "salePrice": 24.99,
+      "price": 24.99,
+      "title": "Ribbon-Trim Panama Hat",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000391782",
+      "brand": "ACC",
+      "id": "2000391782",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00391782-02.jpg"
+    },
+    {
+      "salePrice": 5.16,
+      "price": 12.9,
+      "title": "Brushed Knit Striped Beanie",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000240494",
+      "brand": "ACC",
+      "id": "2000240494",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00240494-02.jpg"
+    },
+    {
+      "salePrice": 5,
+      "price": 5,
+      "title": "Cable Knit Pom Pom Beanie",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000228085",
+      "brand": "ACC",
+      "id": "2000228085",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00228085-01.jpg"
+    },
+    {
+      "salePrice": 7,
+      "price": 12.99,
+      "title": "Marled Pom Pom Beanie",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000391080",
+      "brand": "ACC",
+      "id": "2000391080",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00391080-01.jpg"
+    },
+    {
+      "salePrice": 19.99,
+      "price": 19.99,
+      "title": "Brushed Fedora Hat",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000396417",
+      "brand": "ACC",
+      "id": "2000396417",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00396417-01.jpg"
+    },
+    {
+      "salePrice": 14.99,
+      "price": 14.99,
+      "title": "Pinstriped Cabbie Hat",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000393813",
+      "brand": "ACC",
+      "id": "2000393813",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00393813-02.jpg"
+    },
+    {
+      "salePrice": 22.99,
+      "price": 22.99,
+      "title": "Brushed Wide-Brim Fedora",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000393809",
+      "brand": "ACC",
+      "id": "2000393809",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00393809-02.jpg"
+    },
+    {
+      "salePrice": 3,
+      "price": 4.99,
+      "title": "Ribbed Knit Beanie",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000389271",
+      "brand": "ACC",
+      "id": "2000389271",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00389271-04.jpg"
+    },
+    {
+      "salePrice": 22.99,
+      "price": 22.99,
+      "title": "Leopard Print-Trim Fedora",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000389255",
+      "brand": "ACC",
+      "id": "2000389255",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00389255-02.jpg"
+    },
+    {
+      "salePrice": 9.99,
+      "price": 9.99,
+      "title": "Rose Graphic Dad Cap",
+      "url": "https://www.forever21.com/us/shop/catalog/product/21men/mens-main/2000388530",
+      "brand": "ACC",
+      "id": "2000388530",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00388530-02.jpg"
+    },
+    {
+      "salePrice": 5.16,
+      "price": 12.9,
+      "title": "Men Quilted Fleece-Back Scarf",
+      "url": "https://www.forever21.com/us/shop/catalog/product/21men/mens-main/1000311459",
+      "brand": "ACC",
+      "id": "1000311459",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00311459-01.jpg"
+    },
+    {
+      "salePrice": 14.99,
+      "price": 14.99,
+      "title": "Baby Phat Baseball Hat",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000387050",
+      "brand": "ACC",
+      "id": "2000387050",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00387050-02.jpg"
+    },
+    {
+      "salePrice": 24.99,
+      "price": 24.99,
+      "title": "Ribbon-Trim Fedora Hat",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000371181",
+      "brand": "ACC",
+      "id": "2000371181",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00371181-02.jpg"
+    },
+    {
+      "salePrice": 22.99,
+      "price": 22.99,
+      "title": "Geo Print Trim Fedora",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000371178",
+      "brand": "ACC",
+      "id": "2000371178",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00371178-02.jpg"
+    },
+    {
+      "salePrice": 6,
+      "price": 14.99,
+      "title": "Glen Plaid Beret",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000370559",
+      "brand": "ACC",
+      "id": "2000370559",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00370559-02.jpg"
+    },
+    {
+      "salePrice": 14.99,
+      "price": 14.99,
+      "title": "Houndstooth Print Beret",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000370321",
+      "brand": "ACC",
+      "id": "2000370321",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00370321-02.jpg"
+    },
+    {
+      "salePrice": 12.99,
+      "price": 12.99,
+      "title": "Faux Leather Baseball Hat",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000370170",
+      "brand": "ACC",
+      "id": "2000370170",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00370170-02.jpg"
+    },
+    {
+      "salePrice": 7,
+      "price": 12.99,
+      "title": "Leopard Print Beanie",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000369916",
+      "brand": "ACC",
+      "id": "2000369916",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00369916-02.jpg"
+    },
+    {
+      "salePrice": 17.99,
+      "price": 17.99,
+      "title": "Velvet Cabbie Hat",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000369907",
+      "brand": "ACC",
+      "id": "2000369907",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00369907-04.jpg"
+    },
+    {
+      "salePrice": 7.96,
+      "price": 19.9,
+      "title": "Contrast-Trim Floppy Straw Hat",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000369503",
+      "brand": "ACC",
+      "id": "2000369503",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00369503-01.jpg"
+    },
+    {
+      "salePrice": 24.99,
+      "price": 24.99,
+      "title": "Faux Leather-Trim Fedora",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000368990",
+      "brand": "ACC",
+      "id": "2000368990",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00368990-03.jpg"
+    },
+    {
+      "salePrice": 6,
+      "price": 14.99,
+      "title": "Ribbed Metallic Beret",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000368961",
+      "brand": "ACC",
+      "id": "2000368961",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00368961-02.jpg"
+    },
+    {
+      "salePrice": 24.9,
+      "price": 24.9,
+      "title": "Studded Faux Leather-Trim Fedora",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000366757",
+      "brand": "ACC",
+      "id": "2000366757",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00366757-02.jpg"
+    },
+    {
+      "salePrice": 14.99,
+      "price": 14.99,
+      "title": "Metal-Trim Cabbie Hat",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000366064",
+      "brand": "ACC",
+      "id": "2000366064",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00366064-02.jpg"
+    },
+    {
+      "salePrice": 12.9,
+      "price": 12.9,
+      "title": "Wool-Blend Beret",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000361577",
+      "brand": "ACC",
+      "id": "2000361577",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00361577-08.jpg"
+    },
+    {
+      "salePrice": 9.9,
+      "price": 9.9,
+      "title": "Be The Bad Guy Embroidered Dad Cap",
+      "url": "https://www.forever21.com/us/shop/catalog/product/21men/mens-main/2000346136",
+      "brand": "ACC",
+      "id": "2000346136",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00346136-01.jpg"
+    },
+    {
+      "salePrice": 9.9,
+      "price": 9.9,
+      "title": "No Photo Please Embroidered Dad Cap",
+      "url": "https://www.forever21.com/us/shop/catalog/product/21men/mens-main/2000345567",
+      "brand": "ACC",
+      "id": "2000345567",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00345567-01.jpg"
+    },
+    {
+      "salePrice": 9.9,
+      "price": 9.9,
+      "title": "Faux Suede Dad Cap",
+      "url": "https://www.forever21.com/us/shop/catalog/product/21men/mens-main/2000326810",
+      "brand": "ACC",
+      "id": "2000326810",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00326810-04.jpg"
+    },
+    {
+      "salePrice": 4,
+      "price": 9.99,
+      "title": "Faux Suede Baseball Hat",
+      "url": "https://www.forever21.com/us/shop/catalog/product/21men/mens-main/2000384815",
+      "brand": "ACC",
+      "id": "2000384815",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00384815-01.jpg"
+    },
+    {
+      "salePrice": 5,
+      "price": 5,
+      "title": "Colorblock Pom Pom Beanie",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000384638",
+      "brand": "ACC",
+      "id": "2000384638",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00384638-04.jpg"
+    },
+    {
+      "salePrice": 4,
+      "price": 9.99,
+      "title": "Christmas Novelty Beanie",
+      "url": "https://www.forever21.com/us/shop/catalog/product/21men/mens-main/2000384346",
+      "brand": "ACC",
+      "id": "2000384346",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00384346-01.jpg"
+    },
+    {
+      "salePrice": 9.99,
+      "price": 9.99,
+      "title": "Holiday Candy Cane Beanie",
+      "url": "https://www.forever21.com/us/shop/catalog/product/21men/mens-main/2000384344",
+      "brand": "ACC",
+      "id": "2000384344",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00384344-01.jpg"
+    },
+    {
+      "salePrice": 7,
+      "price": 14.99,
+      "title": "Fuzzy Leopard Print Beanie",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000384151",
+      "brand": "ACC",
+      "id": "2000384151",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00384151-02.jpg"
+    },
+    {
+      "salePrice": 5.2,
+      "price": 12.99,
+      "title": "Holiday Reindeer Beanie",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000384146",
+      "brand": "ACC",
+      "id": "2000384146",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00384146-02.jpg"
+    },
+    {
+      "salePrice": 12.9,
+      "price": 12.9,
+      "title": "Sequin Christmas Beanie",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000315677",
+      "brand": "ACC",
+      "id": "2000315677",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00315677-02.jpg"
+    },
+    {
+      "salePrice": 8,
+      "price": 12.99,
+      "title": "Ribbed Fuzzy Knit Beanie",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000382404",
+      "brand": "ACC",
+      "id": "2000382404",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00382404-03.jpg"
+    },
+    {
+      "salePrice": 14.99,
+      "price": 14.99,
+      "title": "Faux Shearling Cabby Hat",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000382132",
+      "brand": "ACC",
+      "id": "2000382132",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00382132-02.jpg"
+    },
+    {
+      "salePrice": 4,
+      "price": 9.99,
+      "title": "Velvet Baseball Cap",
+      "url": "https://www.forever21.com/us/shop/catalog/product/21men/mens-main/2000380495",
+      "brand": "ACC",
+      "id": "2000380495",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00380495-04.jpg"
+    },
+    {
+      "salePrice": 14.99,
+      "price": 14.99,
+      "title": "Plaid Cabbie Hat",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000378367",
+      "brand": "ACC",
+      "id": "2000378367",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00378367-02.jpg"
+    },
+    {
+      "salePrice": 12.99,
+      "price": 12.99,
+      "title": "Faux Leather Trim Cabbie Hat",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000378146",
+      "brand": "ACC",
+      "id": "2000378146",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00378146-02.jpg"
+    },
+    {
+      "salePrice": 19.99,
+      "price": 19.99,
+      "title": "Wide-Brim Fedora Hat",
+      "url": "https://www.forever21.com/us/shop/catalog/product/f21/acc/2000377789",
+      "brand": "ACC",
+      "id": "2000377789",
+      "thumbImage": "https://www.forever21.com/images/1_front_330/00377789-02.jpg"
+    }
+  ]
+}
