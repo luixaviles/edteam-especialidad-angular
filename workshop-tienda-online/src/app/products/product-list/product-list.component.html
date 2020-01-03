@@ -1,0 +1,16 @@
+<div class="card-container">
+  <mat-card class="card-content" *ngFor="let product of products">
+    <mat-card-header>
+      <mat-card-title>{{product.title}}</mat-card-title>
+      <mat-card-subtitle>{{product.brand}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image *ngIf="product.thumbImage" [src]="product.thumbImage">
+    <mat-card-content>
+      <p> {{product.price | currency}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>Edit</button>
+      <button mat-button>Delete</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

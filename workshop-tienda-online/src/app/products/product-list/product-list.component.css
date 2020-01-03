@@ -1,0 +1,11 @@
+.card-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card-content {
+  width: 180px;
+  box-sizing: border-box;
+  margin: 16px;
+  cursor: pointer;
+}
