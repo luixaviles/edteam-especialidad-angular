@@ -3,7 +3,11 @@ import { CommonModule } from '@angular/common';
 import {
   MatInputModule,
   MatButtonModule,
-  MatCardModule
+  MatCardModule,
+  MatSnackBarModule,
+  MatToolbarModule,
+  MatMenuModule,
+  MatIconModule
 } from '@angular/material';
 
 
@@ -13,12 +17,20 @@ import {
     CommonModule,
     MatInputModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatSnackBarModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatIconModule
   ],
   exports: [
     MatInputModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatSnackBarModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatIconModule
   ]
 })
 export class MaterialModule { }
