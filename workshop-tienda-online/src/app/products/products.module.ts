@@ -9,10 +9,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductAddComponent } from './product-add/product-add.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
+import { ProductEditComponent } from './product-edit/product-edit.component';
 
 
 @NgModule({
-  declarations: [ProductsComponent, ProductListComponent, ProductAddComponent],
+  declarations: [ProductsComponent, ProductListComponent, ProductAddComponent, ProductEditComponent],
   imports: [
     CommonModule,
     ProductsRoutingModule,
