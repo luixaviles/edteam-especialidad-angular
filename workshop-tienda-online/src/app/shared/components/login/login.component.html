@@ -5,17 +5,27 @@
       <p>
         <mat-form-field>
           <input type="text" matInput placeholder="Username" formControlName="username">
+          <mat-error *ngIf="form.get('username').invalid &&
+                            (form.get('username').dirty || form.get('username').touched)">
+            Username is required
+          </mat-error>
         </mat-form-field>
       </p>
       <p>
         <mat-form-field>
           <input type="password" matInput placeholder="Password" formControlName="password">
+          <mat-error *ngIf="form.get('password').invalid &&
+                            (form.get('password').dirty || form.get('password').touched)">
+            Password is required
+          </mat-error>
         </mat-form-field>
       </p>
     </form>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-raised-button color="primary" (click)="submit()">
+    <button mat-raised-button color="primary"
+            [disabled]="form.invalid"
+            (click)="submit()">
       Login
     </button>
   </mat-card-actions>

@@ -1,0 +1,60 @@
+<mat-card>
+<mat-card-title>{{title}}</mat-card-title>
+  <img mat-card-image *ngIf="form.value?.thumbImage &&
+                             !form.get('thumbImage').invalid" [src]="form.value.thumbImage">
+  <mat-card-content>
+    <form [formGroup]="form">
+      <mat-form-field>
+        <input type="text" matInput placeholder="Title" formControlName="title">
+        <mat-error *ngIf="form.get('title').getError('required') &&
+                          (form.get('title').dirty || form.get('title').touched)">
+          Title is required
+        </mat-error>
+        <mat-error *ngIf="form.get('title').getError('minlength')">
+          Title length is too short
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input type="text" matInput placeholder="Brand" formControlName="brand">
+         <mat-error *ngIf="form.get('brand').getError('required') &&
+                          (form.get('brand').dirty || form.get('brand').touched)">
+          Brand is required
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input type="text" matInput placeholder="Price" formControlName="price">
+        <mat-error *ngIf="form.get('price').getError('required') &&
+                          (form.get('price').dirty || form.get('price').touched)">
+          Price is required
+        </mat-error>
+        <mat-error *ngIf="form.get('price').getError('minprice')">
+          Price must be greater than $10
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input type="text" matInput placeholder="Sale Price" formControlName="salePrice">
+        <mat-error *ngIf="form.get('salePrice').getError('required') &&
+                          (form.get('salePrice').dirty || form.get('salePrice').touched)">
+          Sale Price is required
+        </mat-error>
+        <mat-error *ngIf="form.get('salePrice').getError('minprice')">
+          Sale Price must be greater than $10
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input type="text" matInput placeholder="Thumb Image URL" formControlName="thumbImage">
+        <mat-error *ngIf="form.get('thumbImage').getError('required') &&
+                          (form.get('thumbImage').dirty || form.get('thumbImage').touched)">
+          Thumb Image URL is required
+        </mat-error>
+        <mat-error *ngIf="form.get('thumbImage').getError('pattern')">
+          Thumb Image URL should contain a valid URL
+        </mat-error>
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button [disabled]="form.invalid" (click)="onSubmit()" mat-raised-button color="primary">{{labelSubmit}}</button>
+    <button (click)="onCancel()" mat-raised-button>Cancel</button>
+  </mat-card-actions>
+</mat-card>

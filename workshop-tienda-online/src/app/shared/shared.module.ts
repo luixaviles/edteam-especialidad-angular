@@ -6,11 +6,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { RouterModule } from '@angular/router';
 import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
+import { ProgressIndicatorComponent } from './components/progress-indicator/progress-indicator.component';
 
 
 
 @NgModule({
-  declarations: [LoginComponent, ToolbarComponent, ConfirmDialogComponent],
+  declarations: [LoginComponent, ToolbarComponent, ConfirmDialogComponent, ProgressIndicatorComponent],
   imports: [
     CommonModule,
     MaterialModule,
@@ -19,7 +20,8 @@ import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dial
   ],
   exports: [
     ToolbarComponent,
-    ConfirmDialogComponent
+    ConfirmDialogComponent,
+    ProgressIndicatorComponent
   ],
   entryComponents: [ConfirmDialogComponent]
 })
